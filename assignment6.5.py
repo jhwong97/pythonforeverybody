@@ -4,4 +4,5 @@
 text = "X-DSPAM-Confidence:    0.8475"
 search = text.find('0.8475')
 number = text[search:search+6]
-print(number)
+flo_number = float(number)
+print(flo_number)
