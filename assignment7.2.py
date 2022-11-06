@@ -17,4 +17,4 @@ for line in fh:
     fvalue = fvalue + float(new_line)
     count = count + 1
     ave_value = fvalue/count
-print("Average spam confidence: ",ave_value)
+print("Average spam confidence: ", ave_value)
