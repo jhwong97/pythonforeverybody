@@ -11,3 +11,10 @@ count = 0
 fvalue = 0
 for line in fh:
     line = line.rstrip()
+    if not line.startswith("X-DSPAM-Confidence:"):
+        continue
+    new_line = line.replace("X-DSPAM-Confidence: ","")
+    fvalue = fvalue + float(new_line)
+    count = count + 1
+    ave_value = fvalue/count
+print("Average spam confidence: ",ave_value)
