@@ -10,3 +10,9 @@ fh = open(fname)
 
 # Define lst as list
 lst = list()
+
+for line in fh:
+    line = line.rstrip().split()
+    for i in line:
+        if i not in lst:
+            lst.append(i)
