@@ -16,3 +16,6 @@ for line in fh:
     for i in line:
         if i not in lst:
             lst.append(i)
+            
+lst.sort()
+print(lst)
