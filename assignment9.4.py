@@ -12,3 +12,6 @@ counts = dict()
 for line in handle:
     if not line.startswith ('From '):
         continue
+    words = line.split() #To split the words into list
+    word = words[1]
+    
