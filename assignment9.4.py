@@ -14,4 +14,4 @@ for line in handle:
         continue
     words = line.split() #To split the words into list
     word = words[1]
-    
+    counts[word] = counts.get(word,0) + 1 #To add the words into dict()
